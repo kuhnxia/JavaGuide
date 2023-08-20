@@ -511,6 +511,19 @@ System.out.println(i1==i2);
 
 因此，答案是 `false` 。你答对了吗？
 
+反之
+
+```java
+Integer i1 = 40;
+Integer i2 = 40;
+System.out.println(i1==i2);
+```
+答案是 `true`
+
+`==`本质上是比较两个对象的地址。缓存的本质其实是多个变量指向了同一个对象。那么i1和i2的地址自然是相同的。
+
+
+
 记住：**所有整型包装类对象之间值的比较，全部使用 equals 方法比较**。
 
 ![](https://oss.javaguide.cn/github/javaguide/up-1ae0425ce8646adfb768b5374951eeb820d.png)
